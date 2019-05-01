@@ -13,10 +13,10 @@ If not:
 ### Clone cookiecutter-snakemake-workflow
 
 ```console
-$ cookiecutter gh:vallenderlab/cookiecutter-snakemake-workflow
+[username@doserver]$ cookiecutter gh:vallenderlab/cookiecutter-snakemake-workflow
 ```
 ### Use the already cloned cookiecutter by name
 
 ```console
-$ cookiecutter cookiecutter-snakemake-workflow
+[username@doserver]$ cookiecutter cookiecutter-snakemake-workflow
 ```
