@@ -4,7 +4,7 @@ A cookiecutter template for snakemake workflows.
 
 ## Usage
 
-Make sure you have the cookiecutte package installed.
+Make sure you have the `cookiecutter` package installed via `pip`.
 
 If not:
 
@@ -18,5 +18,5 @@ $ cookiecutter gh:vallenderlab/cookiecutter-snakemake-workflow
 ### Use the already cloned cookiecutter by name
 
 ```console
-$ cookiecutter cookiecutter-pypackage
+$ cookiecutter cookiecutter-snakemake-workflow
 ```

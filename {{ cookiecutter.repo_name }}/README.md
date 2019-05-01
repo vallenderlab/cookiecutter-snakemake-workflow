@@ -1,20 +1,23 @@
 # {{cookiecutter.project_name}}
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥{{cookiecutter.min_snakemake_version}}-brightgreen.svg)](https://snakemake.bitbucket.io)
-[![Build Status](https://travis-ci.org/snakemake-workflows/{{cookiecutter.repo_name}}.svg?branch=master)](https://travis-ci.org/snakemake-workflows/{{cookiecutter.repo_name}})
+[![Build Status](https://travis-ci.org/vallenderlab/{{cookiecutter.repo_name}}.svg?branch=master)](https://travis-ci.org/vallenderlab/{{cookiecutter.repo_name}})
 
-This is the template for a new Snakemake workflow. Replace this text with a comprehensive description covering the purpose and domain.
-Insert your code into the respective folders, i.e. `scripts`, `rules`, and `envs`. Define the entry point of the workflow in the `Snakefile` and the main configuration in the `config.yaml` file.
+{{cookiecutter.project_short_description}
 
 ## Authors
 
-* {{cookiecutter.full_name}} [@{{cookiecutter.github_username}}](https://github.com/{{cookiecutter.github_username}})
+* {{cookiecutter.full_name}} - [@{{cookiecutter.github_username}}](https://github.com/{{cookiecutter.github_username}})
 
 ## Usage
 
+Ensure that `snakemake` and `pyyaml` have been installed via `pip`.
+
+If you intend to make reports, install `pygraphviz` using `pip`.
+
 ### Step 1: Install workflow
 
-If you simply want to use this workflow, download and extract the [latest release](https://github.com/snakemake-workflows/{{cookiecutter.repo_name}}/releases).
+If you simply want to use this workflow, download and extract the [latest release](https://github.com/vallenderlab/{{cookiecutter.repo_name}}/releases).
 If you intend to modify and further extend this workflow or want to work under version control, fork this repository as outlined in [Advanced](#advanced). The latter way is recommended.
 
 In any case, if you use this workflow in a paper, don't forget to give credits to the authors by citing the URL of this repository and, if available, its DOI (see above).
@@ -39,25 +42,34 @@ Configure the workflow according to your needs via editing the file `config.yaml
 
 using `$N` cores or run it in a cluster environment via
 
-    snakemake --use-conda --cluster qsub --jobs 100
+```console
+[username@doserver]$ snakemake --use-conda --cluster qsub --jobs 100
+```
 
 or
 
-    snakemake --use-conda --drmaa --jobs 100
+```console
+[username@doserver]$ snakemake --use-conda --drmaa --jobs 100
+```
+
+#### Using Singularity
 
 If you not only want to fix the software stack but also the underlying OS, use
 
-    snakemake --use-conda --use-singularity
+```console
+[username@doserver]$ snakemake --use-conda --use-singularity
+```
 
 in combination with any of the modes above.
 See the [Snakemake documentation](https://snakemake.readthedocs.io/en/stable/executable.html) for further details.
 
-### Step 4: Investigate results
+### Step 4: Analyze results
 
 After successful execution, you can create a self-contained interactive HTML report with all results via:
 
-    snakemake --report report.html
-
+```console
+[username@doserver]$ snakemake --report report.html
+```
 This report can, e.g., be forwarded to your collaborators.
 
 ## Advanced Usage
@@ -70,7 +82,7 @@ The following recipe provides established best practices for running and extendi
 4. Modify the config, and any necessary sheets (and probably the workflow) as needed.
 5. Commit any changes and push the project-branch to your fork on github.
 6. Run the analysis.
-7. Optional: Merge back any valuable and generalizable changes to the [upstream repo](https://github.com/snakemake-workflows/{{cookiecutter.repo_name}}) via a [**pull request**](https://help.github.com/en/articles/creating-a-pull-request). This would be **greatly appreciated**.
+7. Optional: Merge back any valuable and generalizable changes to the [upstream repo](https://github.com/vallenderlab/{{cookiecutter.repo_name}}) via a [**pull request**](https://help.github.com/en/articles/creating-a-pull-request). This would be **greatly appreciated**.
 8. Optional: Push results (plots/tables) to the remote branch on your fork.
 9. Optional: Create a self-contained workflow archive for publication along with the paper (snakemake --archive).
 10. Optional: Delete the local clone/workdir to free space.

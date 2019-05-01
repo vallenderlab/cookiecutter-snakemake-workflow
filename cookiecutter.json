@@ -2,8 +2,8 @@
   "full_name": "John Doe",
   "email": "johndoe@gmail.com",
   "github_username": "johndoe",
-  "project_name": "RNA-Seq",
-  "project_short_description": "A snakemake workflow.",
-  "repo_name": "rna-seq",
+  "project_name": "RNAseq",
+  "project_short_description": "Enter project description.",
+  "repo_name": "rnaseq",
   "min_snakemake_version": "3.12.0"
 }
