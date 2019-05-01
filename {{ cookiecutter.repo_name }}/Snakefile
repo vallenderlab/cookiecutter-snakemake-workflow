@@ -5,9 +5,6 @@
 configfile: "config.yaml"
 report: "report/workflow.rst"
 
-# Allow users to fix the underlying OS via singularity.
-singularity: "docker://continuumio/miniconda3"
-
 
 rule all:
     input:
@@ -15,4 +12,5 @@ rule all:
         # Subsequent target rules can be specified below. They should start with all_*.
 
 
+include: "rules/other.smk"
 include: "rules/other.smk"

@@ -1,4 +1,4 @@
-# Snakemake workflow: {{cookiecutter.project_name}}
+# {{cookiecutter.project_name}}
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥{{cookiecutter.min_snakemake_version}}-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Build Status](https://travis-ci.org/snakemake-workflows/{{cookiecutter.repo_name}}.svg?branch=master)](https://travis-ci.org/snakemake-workflows/{{cookiecutter.repo_name}})
@@ -8,32 +8,34 @@ Insert your code into the respective folders, i.e. `scripts`, `rules`, and `envs
 
 ## Authors
 
-* {{cookiecutter.full_name}} (@{{cookiecutter.username}})
+* {{cookiecutter.full_name}} [@{{cookiecutter.github_username}}](https://github.com/{{cookiecutter.github_username}})
 
 ## Usage
 
-### Simple
-
-#### Step 1: Install workflow
+### Step 1: Install workflow
 
 If you simply want to use this workflow, download and extract the [latest release](https://github.com/snakemake-workflows/{{cookiecutter.repo_name}}/releases).
 If you intend to modify and further extend this workflow or want to work under version control, fork this repository as outlined in [Advanced](#advanced). The latter way is recommended.
 
 In any case, if you use this workflow in a paper, don't forget to give credits to the authors by citing the URL of this repository and, if available, its DOI (see above).
 
-#### Step 2: Configure workflow
+### Step 2: Configure workflow
 
 Configure the workflow according to your needs via editing the file `config.yaml`.
 
-#### Step 3: Execute workflow
+### Step 3: Execute workflow
 
-Test your configuration by performing a dry-run via
+#### Perform a dry-run
 
-    snakemake --use-conda -n
+```console
+[username@doserver]$ snakemake --use-conda -n
+```
 
-Execute the workflow locally via
-
-    snakemake --use-conda --cores $N
+#### Execute the workflow locally
+    
+```console
+[username@doserver]$ snakemake --use-conda --cores $N
+```
 
 using `$N` cores or run it in a cluster environment via
 
@@ -50,7 +52,7 @@ If you not only want to fix the software stack but also the underlying OS, use
 in combination with any of the modes above.
 See the [Snakemake documentation](https://snakemake.readthedocs.io/en/stable/executable.html) for further details.
 
-# Step 4: Investigate results
+### Step 4: Investigate results
 
 After successful execution, you can create a self-contained interactive HTML report with all results via:
 
@@ -58,7 +60,7 @@ After successful execution, you can create a self-contained interactive HTML rep
 
 This report can, e.g., be forwarded to your collaborators.
 
-### Advanced
+## Advanced Usage
 
 The following recipe provides established best practices for running and extending this workflow in a reproducible way.
 

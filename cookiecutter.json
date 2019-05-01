@@ -1,8 +1,9 @@
 {
-  "full_name": "Johannes Köster",
-  "email": "johannes.koester@protonmail.com",
-  "username": "johanneskoester",
+  "full_name": "John Doe",
+  "email": "johndoe@gmail.com",
+  "github_username": "johndoe",
   "project_name": "RNA-Seq",
+  "project_short_description": "A snakemake workflow.",
   "repo_name": "rna-seq",
   "min_snakemake_version": "3.12.0"
 }
