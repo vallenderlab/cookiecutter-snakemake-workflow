@@ -13,4 +13,4 @@ rule all:
 
 
 include: "rules/other.smk"
-include: "rules/other.smk"
+include: "rules/clean.smk"
