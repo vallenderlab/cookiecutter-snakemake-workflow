@@ -3,7 +3,7 @@
 [![Snakemake](https://img.shields.io/badge/snakemake-≥{{cookiecutter.min_snakemake_version}}-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Build Status](https://travis-ci.org/vallenderlab/{{cookiecutter.repo_name}}.svg?branch=master)](https://travis-ci.org/vallenderlab/{{cookiecutter.repo_name}})
 
-{{cookiecutter.project_short_description}
+{{cookiecutter.project_short_description}}
 
 ## Authors
 
