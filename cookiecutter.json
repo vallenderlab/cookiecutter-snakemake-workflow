@@ -4,6 +4,6 @@
   "github_username": "johndoe",
   "project_name": "RNAseq",
   "project_short_description": "Enter project description.",
-  "repo_name": {{cookiecutter.project_name}},
+  "repo_name": "rnaseq-workflow",
   "min_snakemake_version": "3.12.0"
 }
